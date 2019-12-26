@@ -1,0 +1,7 @@
+﻿  Some examples.cpp
+D:\Visual Studio 2019 Projects\Some examples\Some examples\Some examples.cpp(31,6): warning C4101: 'a': unreferenced local variable
+D:\Visual Studio 2019 Projects\Some examples\Some examples\Some examples.cpp(30,6): warning C4101: 'solution1': unreferenced local variable
+D:\Visual Studio 2019 Projects\Some examples\Some examples\Some examples.cpp(33,7): warning C4101: 'firstWord': unreferenced local variable
+D:\Visual Studio 2019 Projects\Some examples\Some examples\Some examples.cpp(34,7): warning C4101: 'secondWord': unreferenced local variable
+D:\Visual Studio 2019 Projects\Some examples\Some examples\Some examples.cpp(30,17): warning C4101: 'n': unreferenced local variable
+  Some examples.vcxproj -> D:\Visual Studio 2019 Projects\Some examples\Debug\Some examples.exe

@@ -1,0 +1,80 @@
+Example 1:
+
+You are given an array a of length n = 2m. Write a function that finds length of the minimal period T of array a.
+
+int MinPeriod(int * a, int n)
+
+Number T is a period of array a, if repeating first T elements of array a several times gives exactly array a, without any extra elements.
+
+input:
+n = 8 		
+a = {2, 5, 3, 4, 2, 5, 3, 4}	
+=> output: 4
+
+input:
+n = 8 		
+a = {2, 5, 3, 2, 5, 3, 2, 5}
+=> output: 8
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Example 2:
+
+Two strings A and B are isomorphic if there exists character mapping which replaces characters from A to get B. Rules for character mapping are:
+
+    all occurrences of one character (e.g. ‘x’) must be replaced with the same character (e.g. ‘y’)
+    no two different characters may map to the same character
+    a character may map to itself
+
+Write a function that returns true if provided strings are isomorphic, otherwise false:
+
+bool AreStringsIsomorphic(char* a, char* b)
+
+The strings are NULL-terminated, with characters from lower case English alphabet ‘a’ – ‘z’.
+
+A = “brain”, B = “space”  =>  true
+A = “noon”, B = “feet”	=>	false
+A = “aab”, B = “ccd”	=>	true
+
+Example 3:
+
+Write a function
+
+void reverseNodes(Node** head, int indexA, int indexB)
+
+which should reverse order of nodes in list, starting from node on position indexA until node on position indexB.
+
+Head node is on position 1.
+
+Examples:
+
+input:
+‘a’ -> ‘c’ -> ‘x’ -> ‘q’ -> ‘e’ -> ‘2’		
+indexA = 2	
+indexB = 4
+output:
+‘a’ -> ‘q’ -> ‘x’ -> ‘c’ -> ‘e’ -> ‘2’
+
+Example 4:
+
+You are given an array of integers, denoted with a of length m, where first number in array is odd and the last number is even. You need to write a function
+
+TreeNode generateTree(int m, int* a)
+
+that will create a N-ary tree from this array with the following properties:
+
+    Leaf nodes of the tree are even numbers and inner nodes are odd numbers
+    Pre order traversal of the tree is equal to the original array
+
+If there are multiple solutions (trees which satisfy above properties) return any of them. N could be any integer number. 
+
+Tree node is represented as
+	struct TreeNode
+	{
+		int value;
+		TreeNode* sibling; // Pointer to the next sibling, or NULL if next sibling does not exist
+		TreeNode* firstChild; // Pointer to the first child, or NULL if this is leaf
+	};
+
+sibling and firstChild should be set to NULL if corresponding nodes don’t exist.
+leaf nodes  don’t have child nodes but can have sibilings
